@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>JAAS Dashboard</title>
+  <meta name="description" content="Neue Juju / JAAS Dashboard">
+  <meta name="author" content="Canonical">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="main">
+
+    <div class="sidebar collapsed">
+      <ul class="jaasmenu">
+        <img src="imgs/jaas-logo.svg" />
+      </ul>
+      <ul class="menu">
+        <li>Models</li>
+        <li>Controllers</li>
+        <li>Usage</li>
+        <li>Logs</li>
+      </ul>
+    </div>
+    <div class="sidebar active">
+      <ul class="jaasmenu">
+        <img src="imgs/jaas-logo.svg" />
+      </ul>
+      <ul class="menu">
+        <li>Models</li>
+        <li>Controllers</li>
+        <li>Usage</li>
+        <li>Logs</li>
+      </ul>
+    </div>
+    <div class="model">
+      <div class="topology">
+      </div>
+      <div class="modelinfo">
+      </div>
+    </div>
+    <div class="shell">
+      <div class="header">
+        Juju Shell
+      </div>
+      <p>welcome to the Juju Shell - see docs at https://jaas.ai/docs/juju-shell<br>
+      <br>
+      shell:~$ juju switch paulklee/cdk-default<br>
+      shell:~$ watch juju status<br>
+		  <span class="spacing">Every 2.0s: juju status</span>
+		  <span class="spacing">Thu Jul 11 09:39:07 2019</span><br>
+      <span class="green">[cdk-default]@jaas: &#x02502;</span></p>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
