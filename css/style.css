@@ -26,25 +26,56 @@ body {
   position: relative;
 }
 
+ul {
+  padding: 10px 0;
+  margin-left: 32px !important;
+  margin-top: 10px;
+}
+
+li {
+  list-style: none;
+  padding: 14px 4px;
+  color: #8D94A4;
+}
+
+li:hover {
+  color: #dae0eb;
+}
+
+li.active {
+  background: #2D3039;
+}
+
+.submenu {
+  padding: 0;
+  margin: -10px 0 0 14px !important;
+}
+
+.thirdlevel {
+  padding: 0;
+  margin: -10px 0 0 14px !important;
+}
+
 .sidebar {
   position: absolute;
   left: 0;
   top: 0;
-  width: 260px;
-  background: #cccccc;
+  width: 46px;
+  background: #191B20;
   height: 100%;
   min-height: 100%;
   z-index: 300;
   overflow: hidden;
   cursor: pointer;
+  padding: 10px;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  transition: .2s;
 }
 
-.sidebar.active {
-  width: 260px;
-}
-
-.sidebar.collapsed {
-  width: 40px;
+.jaasmenu {
+  border-bottom: 1px solid #8D94A4;
+  padding-bottom: 6px;
 }
 
 .green {
@@ -73,7 +104,7 @@ body {
   bottom: 0;
   right: 0;
   z-index: 201;
-  background: #1E2026;
+  background: #262A31;
   width: calc(100% - 40px);
   height: 260px;
 }
@@ -85,7 +116,7 @@ body {
   bottom: 0;
   right: 0;
   z-index: 200;
-  background: #1E2026;
+  background: #191B20;
   width: calc(100% - 40px);
   height: 35px;
 }

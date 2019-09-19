@@ -1,17 +1,19 @@
 $(document).ready( function () {
   //start
-  $(".sidebar.collapsed").slideDown(0);
-  $(".sidebar.active").slideUp(0);
   $(".shell").slideDown(0);
   $(".collapsedshell").slideUp(0);
+  $('.submenu').hide();
+  $('.thirdlevel').hide();
 
   //sidebar interaction
   $(".sidebar").mouseenter(function() {
-    $(".sidebar.collapsed").slideUp('fast');
-    $(".sidebar.active").slideDown('slow');
+    $(this).css('width','260px');
+    $('.submenu').slideToggle();
+    $('.thirdlevel').slideToggle();
   }).mouseleave(function() {
-    $(".sidebar.collapsed").slideDown('fast');
-    $(".sidebar.active").slideUp(0);
+    $(this).css('width','46px');
+    $('.submenu').slideToggle();
+    $('.thirdlevel').slideToggle();
   });
 
   //shell interaction

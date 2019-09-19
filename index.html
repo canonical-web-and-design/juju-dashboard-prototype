@@ -7,32 +7,32 @@
   <meta name="author" content="Canonical">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.css">
 </head>
 
 <body>
 
   <div class="main">
 
-    <div class="sidebar collapsed">
-      <ul class="jaasmenu">
+    <div class="sidebar">
+      <div class="jaasmenu">
         <img src="imgs/jaas-logo.svg" />
-      </ul>
-      <ul class="menu">
-        <li>Models</li>
-        <li>Controllers</li>
-        <li>Usage</li>
-        <li>Logs</li>
-      </ul>
-    </div>
-    <div class="sidebar active">
-      <ul class="jaasmenu">
-        <img src="imgs/jaas-logo.svg" />
-      </ul>
-      <ul class="menu">
-        <li>Models</li>
-        <li>Controllers</li>
-        <li>Usage</li>
-        <li>Logs</li>
+      </div>
+      <ul class="fa-ul">
+        <li><span class="fa-li"><i class="fas fa-network-wired"></i></span>Models</li>
+        <ul class="submenu">
+          <li>Dev</li>
+            <ul class="thirdlevel">
+              <li class="active">Commercial System</li>
+              <li>MAAS</li>
+            </ul>
+          <li>Staging</li>
+          <li>Staging</li>
+          <li>Prod</li>
+        </ul>
+        <li><span class="fa-li"><i class="fas fa-server"></i></span>Controllers</li>
+        <li><span class="fa-li"><i class="fas fa-chalkboard"></i></span>Usage</li>
+        <li><span class="fa-li"><i class="fas fa-clipboard-list"></i></span>Logs</li>
       </ul>
     </div>
     <div class="model">
