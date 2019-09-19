@@ -12,7 +12,7 @@ body {
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .main {
@@ -73,8 +73,15 @@ li.active {
   transition: .2s;
 }
 
+.badge {
+  background: #e81d1d;
+  padding: 1px 6px;
+  border-radius: 12px;
+  color: white;
+}
+
 .jaasmenu {
-  border-bottom: 1px solid #8D94A4;
+  border-bottom: 1px solid #393e48;
   padding-bottom: 6px;
 }
 
@@ -143,4 +150,43 @@ li.active {
 .shell .chevicon,
 .collapsedshell .chevicon {
   width: 70%;
+}
+
+.topology {
+  width: 30%;
+  background: #f7f7f7;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.modelimg {
+  width: 70%;
+  margin: 20px 0 0 78px;
+}
+
+.modelinfo table {
+  text-align: left;
+  width: 100%;
+  padding: 20px;
+}
+
+.modelinfo th {
+  font-size: 14px;
+  color: #686868;
+}
+
+.modelinfo td {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.jujustatus {
+  width: 70%;
+  background: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
 }

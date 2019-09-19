@@ -23,11 +23,10 @@
         <ul class="submenu">
           <li>Dev</li>
             <ul class="thirdlevel">
-              <li class="active">Commercial System</li>
+              <li class="active">Commercial System <span class="badge">4</span></li>
               <li>MAAS</li>
             </ul>
-          <li>Staging</li>
-          <li>Staging</li>
+          <li>Staging <span class="badge">2</span></li>
           <li>Prod</li>
         </ul>
         <li><span class="fa-li"><i class="fas fa-server"></i></span>Controllers</li>
@@ -37,8 +36,38 @@
     </div>
     <div class="model">
       <div class="topology">
+        <div class="modelinfo">
+          <table>
+            <tr>
+              <th>MODEL</th>
+              <th>REGION</th>
+            </tr>
+            <tr>
+              <td>cdk-default</td>
+              <td>us-east-1</td>
+            </tr>
+            <tr>
+              <th>CONTROLLER</th>
+              <th>VERSION</th>
+            </tr>
+            <tr>
+              <td>aws-contr</td>
+              <td>2.3.7</td>
+            </tr>
+            <tr>
+              <th>CLOUD</th>
+              <th>SLA</th>
+            </tr>
+            <tr>
+              <td>aws</td>
+              <td>unsupported</td>
+            </tr>
+          </table>
+        </div>
+        <br>
+        <img class="modelimg" src="imgs/model.png" />
       </div>
-      <div class="modelinfo">
+      <div class="jujustatus">
       </div>
     </div>
     <div class="shell">
