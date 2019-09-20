@@ -19,4 +19,8 @@ $(document).ready( function () {
     $(".collapsedshell").slideToggle('fast');
   });
 
+  $(document).on('click', '.drag', function(){
+    $("#resizable").resizable();
+  });
+
 });

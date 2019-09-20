@@ -6,6 +6,7 @@
   <meta name="description" content="Neue Juju / JAAS Dashboard">
   <meta name="author" content="Canonical">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/all.css">
 </head>
@@ -37,6 +38,9 @@
     <div class="model">
       <div class="topology">
         <div class="modelinfo">
+          <div class="breadcrumps">
+            <a href="#">Models</a> / <a href="#">Dev</a> / <a href="#">Commercial System</a>
+          </div>
           <table>
             <tr>
               <th>MODEL</th>
@@ -68,14 +72,17 @@
         <img class="modelimg" src="imgs/model.png" />
       </div>
       <div class="jujustatus">
+        <img class="statusimg" src="imgs/status.jpg" />
       </div>
     </div>
-    <div class="shell">
+    <div id="resizable" class="shell ui-widget-content">
       <div class="header">
+        <div class="drag">
+        </div>
         Juju Shell
         <div class="chevron"><img class="chevicon" src='imgs/chevron.png' /></div>
       </div>
-      <p>welcome to the Juju Shell - see docs at https://jaas.ai/docs/juju-shell<br>
+      <p>welcome to the Juju Shell - see docs at <a href="#">https://jaas.ai/docs/juju-shell</a><br>
       <br>
       shell:~$ juju switch paulklee/cdk-default<br>
       shell:~$ watch juju status<br>
@@ -93,6 +100,7 @@
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
